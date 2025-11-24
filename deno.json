@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@corespeed/zypher": "jsr:@corespeed/zypher@0.5.1",
+    "zod": "npm:zod@^4.1.12",
+    "rxjs-for-await": "npm:rxjs-for-await@^1.0.0"
+  }
+}
