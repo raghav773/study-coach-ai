@@ -1,13 +1,10 @@
-import "jsr:@std/dotenv/load";
-
 import {
-  createZypherContext,
   ZypherAgent,
+  createZypherContext,
   AnthropicModelProvider,
-  runAgentInTerminal,
 } from "@corespeed/zypher";
 
-import { createStudyPlanTool } from "./tools/studyplan.ts";
+import { createStudyPlan } from "./tools/studyplan.ts";
 
 function getEnv(name: string): string {
   const v = Deno.env.get(name);
@@ -26,16 +23,32 @@ async function createAgent() {
     config: { maxTokens: 2048 },
   });
 
-  // 0.5.x correct API
-  agent.tools([createStudyPlanTool]);
-
   return agent;
 }
 
 const agent = await createAgent();
-console.log("\nWelcome to the Zypher Study Coach!\n");
 
-await runAgentInTerminal(agent, "claude-3-haiku-20240307");
+// Example tool input
+const plan = createStudyPlan({
+  topic: "maths",
+  weeks: 4,
+  level: "beginner"
+});
+
+console.log("\n--- ZOD VALIDATED STUDY PLAN ---\n");
+console.log(plan);
+
+// Now ask Zypher agent to refine it
+const response = await agent.runTask(
+  `Here is a study plan:\n\n${plan}\n\nImprove it with daily tasks and tips.`,
+  "claude-3-haiku-20240307"
+);
+
+console.log("\n--- AGENT RESPONSE ---\n");
+console.log(response);
+
+
+
 
 
 
