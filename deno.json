@@ -2,6 +2,7 @@
   "imports": {
     "@corespeed/zypher": "jsr:@corespeed/zypher@0.5.1",
     "@corespeed/zypher/mcp": "jsr:@corespeed/zypher@0.5.1/mcp",
+    "rxjs-for-await": "npm:rxjs-for-await@^1.0.0",
     "zod": "npm:zod@^3.22.4"
   }
 }
