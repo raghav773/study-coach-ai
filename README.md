@@ -93,7 +93,6 @@ What would you like to do?
 
 The agent will then generate and refine your study plan interactively.
 
-
 🧠 Built With
 
 Zypher (v0.5.1)
@@ -104,6 +103,7 @@ Deno Runtime
 
 Zod for validation
 
+```
 ---
 
 🔮 Possible Future Enhancements
@@ -111,7 +111,7 @@ Zod for validation
 Here are some focused improvements that could meaningfully extend the Study Coach:
 
 1. 🌟 Multi-Tool Agent
-
+2. 
 Add additional tools such as:
 Quiz or flashcard generator
 Topic explainer
@@ -129,7 +129,6 @@ Track progress over time
 3. 📄 Export Options
 
 Allow exporting the final plan as:
-
 .txt
 .md
 .pdf
