@@ -11,8 +11,6 @@ This project demonstrates how to build a lightweight agent that:
 - Supports follow-up questions about the generated plan
 - Runs through an interactive terminal UI
 
-This project is intentionally small and focused—built exactly for CoreSpeed’s technical assessment.
-
 ---
 
 ## 🚀 Features
