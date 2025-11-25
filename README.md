@@ -105,3 +105,41 @@ Deno Runtime
 Zod for validation
 
 
+🔮 Possible Future Enhancements
+
+Here are some focused improvements that could meaningfully extend the Study Coach:
+
+1. 🌟 Multi-Tool Agent
+
+Add additional tools such as:
+Quiz or flashcard generator
+Topic explainer
+Resource recommender
+Summary or outline creator
+This would make the agent more capable and versatile.
+
+2. 💾 Save & Reload Plans
+
+Store study plans in a JSON file so users can:
+View past plans
+Resume an older plan
+Track progress over time
+
+3. 📄 Export Options
+
+Allow exporting the final plan as:
+
+.txt
+.md
+.pdf
+Useful for sharing or offline studying.
+
+4. 🎨 Improved CLI Experience
+
+Enhance usability using a CLI/TUI library (like Cliffy) with:
+Colors and formatting
+Better menus
+Loading indicators
+Progress bars
+
+
