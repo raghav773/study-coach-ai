@@ -106,40 +106,47 @@ Zod for validation
 ```
 ---
 
-🔮 Possible Future Enhancements
+## 🔮 Possible Future Enhancements
 
-Here are some focused improvements that could meaningfully extend the Study Coach:
+This project was intentionally designed to be simple, but the structure allows for many natural extensions.  
+Here are several meaningful improvements that could be added next:
 
-1. 🌟 Multi-Tool Agent
-2. 
-Add additional tools such as:
-Quiz or flashcard generator
-Topic explainer
-Resource recommender
-Summary or outline creator
-This would make the agent more capable and versatile.
+### 1. 🌟 Multi-Tool Support
+Add more functions the agent can call, such as:
+- `generate_quiz` – create practice questions or flashcards  
+- `explain_topic` – simplify or break down complex subjects  
+- `summarize_plan` – shorten a long study plan  
+- `recommend_resources` – suggest books, videos, or courses  
 
-2. 💾 Save & Reload Plans
+These would turn the Study Coach into a more capable multi-tool agent.
 
-Store study plans in a JSON file so users can:
-View past plans
-Resume an older plan
-Track progress over time
+### 2. 💾 Persistent Storage
+Store the last generated study plans inside a JSON file (e.g., `/storage/plans.json`) so users can:
+- View previous plans  
+- Compare progress  
+- Reload an old plan and continue asking questions  
 
-3. 📄 Export Options
+### 3. 📁 Export to Text or PDF
+Allow users to save their final study plan as:
+- `.txt`
+- `.md`
+- `.pdf`
 
-Allow exporting the final plan as:
-.txt
-.md
-.pdf
-Useful for sharing or offline studying.
+A single command could generate a shareable study plan file.
 
-4. 🎨 Improved CLI Experience
+### 4. 🌈 Enhanced CLI Experience
+Use a TUI/CLI framework like **Cliffy** to add:
+- Colored output  
+- Spinners/loading indicators  
+- Better menus  
+- Progress bars  
 
-Enhance usability using a CLI/TUI library (like Cliffy) with:
-Colors and formatting
-Better menus
-Loading indicators
+This would make the CLI feel more like a polished app.
+
+### 5. 🧠 Natural Language Mode
+Instead of selecting from a menu, allow users to type commands like:
+
+
 Progress bars
 
 
